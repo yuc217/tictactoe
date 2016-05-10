@@ -1,0 +1,39 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : May 10, 2016, 10:23:58 AM
+    Author     : yuchencai
+*/
+
+#board {
+  background: #ccc;
+  width: 300px; 
+  height: 300px;
+}
+
+#board .cell {
+  border: 1px solid #aaa;
+  box-sizing: border-box;
+  float: left;
+  line-height: 100px;
+  text-align: center;
+  width: 100px; 
+  height: 100px;
+}
+#board .cell:hover {
+  cursor: pointer;
+  background: #ddd;
+}
+
+/* Change background picture based on class name */
+#board .cell.x {
+  background: url("img/x.jpg");
+  background-size: 100% 100%;
+}
+#board .cell.o {
+  background: url("img/o.jpg");
+  background-size: 100% 100%;
+}
