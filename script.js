@@ -47,7 +47,7 @@ var checkBoard = function () {
         return true;
     }
     // diagonal euqal
-    else if (spaces[0] === spaces[4] && spaces[4] === spaces[7] && typeof spaces[4] !== "undefined") {
+    else if (spaces[0] === spaces[4] && spaces[4] === spaces[8] && typeof spaces[4] !== "undefined") {
         alert("Congraduations! You Won!");
         return true;
     } else if (spaces[2] === spaces[4] && spaces[6] === spaces[4] && typeof spaces[6] !== "undefined") {
@@ -65,13 +65,13 @@ $(document).on('click', '#board .cell', function (e) {
     if (spaces[index] === undefined) {
         spaces[index] = currentPlayer;
         $('#board .cell:eq(' + index + ')').addClass(currentPlayer);
-
-    }
-    if(checkBoard()) {
-        reset();
-    }else {
         playerSwitch();
     }
+    if(checkBoard()){
+        reset();
+    }
+
+
     if(checkFull()) reset();
 });
 
