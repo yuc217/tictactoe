@@ -16,8 +16,9 @@ Final Project
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Tic_tac_toe.svg/2000px-Tic_tac_toe.svg.png">
-        <link rel ="stylesheet" href ="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" />
         <link href="style.css" rel="stylesheet" type="text/css"/>
+        <link rel ="stylesheet" href ="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css"/>
+        
    
         <script src="http://code.jquery.com/jquery-2.1.0.min.js" type="text/javascript"> </script>
         <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
@@ -25,8 +26,13 @@ Final Project
     </head>
     <body>
         <script src="script.js" type="text/javascript"></script>
-        <div id="container">
+        <div data-role="page" id="container">
+        
+            <div data-role="header">
+                <h1>Tic-Tac-Toe Time!</h1>
+            </div>
             <h3>It's <span id="switchPlayer"></span>'s turn.</h3>
+
             <div id="board">
                 <div class="cell" id="cell1"></div>
                 <div class="cell" id="cell2"></div>
@@ -38,6 +44,8 @@ Final Project
                 <div class="cell" id="cell8"></div>
                 <div class="cell" id="cell9"></div>
             </div>
+            
+            <div data-role="footer">Copyright &copy; Yuchen Cai</div>
         </div>
     </body>
 </html>

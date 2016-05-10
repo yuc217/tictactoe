@@ -66,12 +66,12 @@ $(document).on('click', '#board .cell', function (e) {
         spaces[index] = currentPlayer;
         $('#board .cell:eq(' + index + ')').addClass(currentPlayer);
         playerSwitch();
-    }
-    if(checkBoard()){
-        reset();
-    }
+    
+        if(checkBoard()){
+            reset();
+        }
 
-
+    }
     if(checkFull()) reset();
 });
 
