@@ -7,7 +7,16 @@ and open the template in the editor.
     Created on : May 10, 2016, 10:23:58 AM
     Author     : yuchencai
 */
-
+html,body {
+  margin:0;
+  padding:0;
+  height:100%; /* needed for container min-height */
+}
+div#footer {
+  position:absolute;
+  width:100%;
+  bottom:0; /* stick to bottom */
+}
 #board {
   background: #ccc;
   width: 300px; 
