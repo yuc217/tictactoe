@@ -12,6 +12,9 @@ html,body {
   padding:0;
   height:100%; /* needed for container min-height */
 }
+#board{
+  height:100%;
+}
 div#footer {
   position:absolute;
   width:100%;
