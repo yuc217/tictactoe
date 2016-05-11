@@ -102,4 +102,5 @@ function reset(){
 
 $(document).ready(function () {
     playerSwitch();
+
 });
