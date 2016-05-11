@@ -6,7 +6,7 @@ Game: Tic-Tac-Toe
 Can be viewed at http://yuc217.github.io
 
 
-Just open the index.html
+Just open the index.html or above link using Chrome 
 
 The tic-tac-toe folder is constructed from NetBeans, I have extract all essential files in the very first level directory. 
 
